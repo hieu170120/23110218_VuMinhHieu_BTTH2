@@ -1,6 +1,6 @@
-package vdmvctrenlop.service;
+package service;
 
-import vdmvctrenlop.model.User;
+import model.User;
 
 public interface UserService {
     User login(String username, String password);

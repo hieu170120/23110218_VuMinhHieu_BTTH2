@@ -1,4 +1,4 @@
-package vdmvctrenlop.Controller;
+package Controller;
 
 import java.io.IOException;
 
@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-import vdmvctrenlop.model.User;
+import model.User;
 
 @SuppressWarnings("serial")
 @WebServlet(urlPatterns = "/waiting")
