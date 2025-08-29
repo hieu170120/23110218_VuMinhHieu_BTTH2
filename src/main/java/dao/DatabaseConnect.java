@@ -24,15 +24,4 @@ public class DatabaseConnect {
         // Trả về kết nối
         return DriverManager.getConnection(url, user, password);
     }
-
-    // Test kết nối
-    public static void main(String[] args) {
-        try {
-            Connection conn = new DatabaseConnect().getConnection();
-            System.out.println("✅ Kết nối thành công: " + conn);
-            conn.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 }

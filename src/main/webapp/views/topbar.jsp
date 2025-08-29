@@ -6,8 +6,8 @@
         <div class="col-sm-6">
             <ul class="list-inline right-topbar pull-right">
                 <li>
-                    <a href="/login">Đăng nhập</a> | 
-                    <a href="/register">Đăng ký</a>
+                    <a href="/mvc/login">Đăng nhập</a> | 
+                    <a href="/mvc/register">Đăng ký</a>
                 </li>
                 <li><i class="search fa fa-search search-button"></i></li>
             </ul>

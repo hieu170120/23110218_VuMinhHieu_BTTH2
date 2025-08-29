@@ -10,7 +10,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import model.User;
 
-@SuppressWarnings("serial")
 @WebServlet(urlPatterns = "/waiting")
 public class WaitingController extends HttpServlet {
 	@Override
@@ -19,12 +18,12 @@ public class WaitingController extends HttpServlet {
 		if (session != null && session.getAttribute("account") != null) {
 			User u = (User) session.getAttribute("account");
 			req.setAttribute("username", u.getUserName());
-			if (u.getRoleid() == 1) {
-				resp.sendRedirect(req.getContextPath() + "/admin/home");
-			} else if (u.getRoleid() == 2) {
-				resp.sendRedirect(req.getContextPath() + "/manager/home");
+			if (u.getRoleId() == 1) {
+				 req.getRequestDispatcher("/views/login-success.jsp").forward(req, resp);
+			} else if (u.getRoleId() == 2) {
+				 req.getRequestDispatcher("/views/login-success.jsp").forward(req, resp);
 			} else {
-				resp.sendRedirect(req.getContextPath() + "/home");
+				 req.getRequestDispatcher("/views/login-success.jsp").forward(req, resp);
 			}
 		} else {
 			resp.sendRedirect(req.getContextPath() + "/login");

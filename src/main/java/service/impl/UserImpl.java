@@ -21,4 +21,34 @@ public class UserImpl implements UserService {
     public User get(String username) {
         return userDao.get(username);
     }
+
+	@Override
+	public void insert(User user) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean register(String email, String password, String username, String fullname, String phone) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean checkExistEmail(String email) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean checkExistUsername(String username) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean checkExistPhone(String phone) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }
