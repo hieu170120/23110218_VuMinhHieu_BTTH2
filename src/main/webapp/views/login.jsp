@@ -35,6 +35,9 @@
         </section>
 
         <button type="submit">Đăng nhập</button>
+        <div class="mt-2 text-center">
+				<a href="forget" class="btn btn-link">Quên mật khẩu?</a>
+			</div>
     </form>
 
     <p>
