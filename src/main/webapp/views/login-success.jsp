@@ -6,5 +6,10 @@
 </head>
 <body>
     <h2>Login Successful!</h2>
+
+    <!-- Form logout gửi request POST tới /logout -->
+    <form action="logout" method="post">
+        <button type="submit">Log out</button>
+    </form>
 </body>
 </html>
